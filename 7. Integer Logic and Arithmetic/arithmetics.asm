@@ -31,7 +31,7 @@
         MOV     r1, #0x0F
         ;r2 = r0 - r1*4
         SUB     r2, r0, r1, LSL #2
-        ;r3 = r1 - r0*4
+        ;r3 = r0*4 - r1
         RSB     r3, r1, r0, LSL #2
         
         ;add two 64bits number using add carry
